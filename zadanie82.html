@@ -1,0 +1,31 @@
+<html>
+<head>
+<title> Zadanie 82</title>
+<script language="JavaScript">
+function pushbutton() {
+alert("Czesc !");}
+</script>
+</head>
+<body>
+<font size="14"color="red" face="Times New Roman"> <b> Łukasiewicz </b> </font> </br>
+<font size="5"color="green" face="Times New Roman"> <b> dzis = new Date()--> </b> </font> </br>
+<font size="5"color="green" face="Times New Roman"> <b> dzis = dzis.getHours()--> </b> </font> </br>
+<font size="5"color="green" face="Times New Roman"> <b> dzis = dzis.getMinutes()--> </b> </font> </br>
+<font size="5"color="green" face="Times New Roman"> <b> dzis = dzis.get.Month()+1--> </b> </font> </br>
+<font size="5"color="green" face="Times New Roman"> <b> dzis = dzis.getDate()--> </b> </font> </br>
+<font size="5"color="green" face="Times New Roman"> <b> dzis = dzis.getFullyear()--> </b> </font> </br>
+
+Ostatnio zmodyfikowany
+<script language="LiveScript">
+document.write(document.lastModified,"<br>")
+</script>
+<form>
+<input type="button" name="Button1" value="Naciśnij mnie" onclick="pushbutton()">
+</form>
+<script language="JavaScript">
+dzis = new Date()
+document.write("<br>Aktualny czas : ",dzis.getHours(),":",dzis.getMinutes())
+document.write("<br>Aktualna data : ",dzis.getMonth()+1,",",dzis.getDate(),",",dzis.getFullYear());
+</script>
+</body>
+</html>

@@ -1,0 +1,48 @@
+<html>
+<head>
+    <title> zadanie 84 Łukasiewicz</title>
+    <link rel="Stylesheet" type="text/css" href="css_stylesheet.css" />
+    <link rel="shortcut icon" href="icon.ico" />
+    <script language="JavaScript">
+	function okno_zamknij_Lukasiewicz()                    
+	  {                             
+	  window.close()                     
+	  }           
+        function Lukasiewicz_start() {
+            start_Luk = new Date();
+            poczatek_Luk = start_Luk.getTime();
+        }
+        function Lukasiewicz_stop() {
+            stop_Luk = new Date();
+            koniec_Luk = stop_Luk.getTime();
+            roznica_Luk = koniec_Luk - poczatek_Luk;
+            pokaz1.innerHTML = roznica_Luk / 1000 + " s";
+        }
+    </script>
+    <style>
+        table {
+            border: 10px;
+            border-style: solid;
+            padding: 5px;
+            font-size: 50px;
+        }
+        body {
+            text-align: center;
+        }
+    </style>
+</head>
+<body>
+    <script language="JavaScript">
+        dzis_Luk = new Date();
+        document.write("Aktualny czas : ", dzis_Luk.getHours(), ":", dzis_Luk.getMinutes(), "<br>");
+    </script>
+    <input type="button" name="Button1" value="START stoper" onclick="Lukasiewicz_start()">
+    <input type="button" name="Button2" value="STOP stoper" onclick="Lukasiewicz_stop()">
+    <center>
+        <table>
+            <tr id="pokaz1"></tr>
+        </table>
+    </center>
+    <input type="button" value="zamknij okno" onclick="okno_zamknij_Lukasiewicz()"/> <br>
+</body>
+</html>

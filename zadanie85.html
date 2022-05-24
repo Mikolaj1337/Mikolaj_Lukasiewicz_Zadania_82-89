@@ -1,0 +1,23 @@
+<script type="text/javascript">
+function okno_zamknij_Lukasiewicz()                    
+	  {                             
+	  window.close()                     
+	  }           
+var dzien = "nieznany";
+var data = new Date();
+
+switch(data.getDay()){
+case 0: dzien = "niedziela"; break;
+case 1: dzien = "poniedziałek"; break;
+case 2: dzien = "wtorek"; break;
+case 3: dzien = "środa"; break;
+case 4: dzien = "czwartek"; break;
+case 5: dzien = "piątek"; break;
+case 6: dzien = "sobota"; break;
+}
+
+document.write("Dziś jest " + dzien + ".");
+</script>
+<form>         
+		<input type="button" value="zamknij okno" onclick="okno_zamknij_Lukasiewicz()"/> 
+</form> 
